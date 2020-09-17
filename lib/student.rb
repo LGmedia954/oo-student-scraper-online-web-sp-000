@@ -7,13 +7,7 @@ class Student
   def initialize(student_hash)
     @name = name
     @location = location
-    @twitter = twitter
-    @linkedin = linkedin
-    @github = github
-    @blog = blog
-    @profile_quote = profile_quote
-    @bio = bio
-    @profile_url = profile_url
+    
     
     Hash[* students.map(&values).flatten]
     
@@ -25,7 +19,13 @@ class Student
   end
 
   def add_student_attributes(attributes_hash)
-    
+    @twitter = twitter
+    @linkedin = linkedin
+    @github = github
+    @blog = blog
+    @profile_quote = profile_quote
+    @bio = bio
+    @profile_url = profile_url
   end
 
   def self.all
