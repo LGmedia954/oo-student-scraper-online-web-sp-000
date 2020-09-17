@@ -15,7 +15,7 @@ class Student
     @bio = bio
     @profile_url = profile_url
     
-    Hash[* students]
+    Hash[* students.map(&values).flatten]
     
     @@all << self
   end
