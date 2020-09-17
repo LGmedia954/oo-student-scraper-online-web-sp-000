@@ -13,7 +13,9 @@ class Student
     @blog = blog
     @profile_quote = profile_quote
     @bio = bio
-    @profile_url = profile_url 
+    @profile_url = profile_url
+    
+    student
     
     @@all << self
   end
