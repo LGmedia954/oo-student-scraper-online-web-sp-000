@@ -5,13 +5,9 @@ class Student
   @@all = []
 
   def initialize(student_hash)
-    @name = name
-    @location = location
-    
-    
-    Hash[* students.map(&values).flatten]
-    
-    @@all << self
+    @name = student_hash[:name]
+    @location = student_hash[:location]
+    self.class.all << self
   end
 
   def self.create_from_collection(students_array)
