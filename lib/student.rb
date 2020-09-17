@@ -15,7 +15,8 @@ class Student
     @bio = bio
     @profile_url = profile_url
     
-    student
+    students.each do |student|
+      
     
     @@all << self
   end
