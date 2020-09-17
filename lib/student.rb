@@ -16,7 +16,7 @@ class Student
     @profile_url = profile_url
     
     students.each do |student|
-      
+      Hash[*]
     
     @@all << self
   end
